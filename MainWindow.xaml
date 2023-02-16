@@ -1,0 +1,19 @@
+﻿<Window x:Class="EdnaLynn_Notes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EdnaLynn_Notes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas Background="#FFB4ED92">
+        <RichTextBox Height="337" Width="504" Canvas.Left="148" Canvas.Top="49" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplay"  Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnShowSomething" Content="Show Something" Canvas.Left="10" Canvas.Top="310" Height="32" Width="111" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnShowSomething_Click"/>
+    </Canvas>
+</Window>
